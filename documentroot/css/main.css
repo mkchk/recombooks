@@ -1,0 +1,152 @@
+.grid .grid-item {
+
+    background: #ffffff;
+
+    float: inline-block;
+
+    font-size: 11px;
+
+    line-height: 1.4em;
+
+    width:31.33%;
+
+    margin: 0 15px 120px 0px;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    -webkit-transition: All 0.6s ease;
+
+    -moz-transition: All 0.6s ease;
+
+    -o-transition: All 0.6s ease;
+
+}
+.2130{}
+
+.book-image{
+    width:100%;
+    height:auto;
+}
+
+.bluronhover:hover  {   
+
+    -webkit-filter: blur(7px) brightness(10);
+
+  -moz-filter: blur(7px) brightness(10);
+
+  -o-filter: blur(7px) brightness(10);
+
+  -ms-filter: blur(7px) brightness(10);
+
+  filter: blur(7px) brightness(10);
+
+}
+
+.displayonhover {
+
+    position:absolute;
+
+    display:none;
+
+    color: #000000;
+
+
+}
+
+.bluronhover:hover ~ .displayonhover, .displayonhover:hover ~ .bluronhover:hover  {
+
+    display: block;
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+}
+
+
+
+.vertical-container200px{
+  height: 200px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.vertical-container100px{
+  height: 120px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.profile-image {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: #000000;
+}
+
+
+@media (min-width: 768px) and (max-width: 1139px) and (orientation:portrait) {
+
+    .grid {
+        left: 0;
+    }
+
+    .grid .grid-item {
+        width:31.33%;
+        margin: 0 0 30px 12px;
+    }
+    
+    .grid  .grid-item img{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) and (orientation:landscape) {
+    .grid {
+        left: 0;
+    }
+
+    .grid .grid-item {
+        width:31.33%;
+        margin: 0 0 30px 15px;
+    }
+
+    .grid .grid-item img{
+        width:100%;
+        height:auto;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+    .grid {
+        margin: 0 15px;
+        left: 0;
+    }
+    .grid .grid-item {
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+    .grid .grid-item img {
+        width: 100%;
+        height: auto;
+    }f
+}
