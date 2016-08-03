@@ -22,7 +22,7 @@
 
 <script>
 
-
+var topbooks = [];
 
 var allBooks =     [
         <% IntMap<Recommender> recommenders = (IntMap<Recommender>) request.getAttribute("allRecommenders");
