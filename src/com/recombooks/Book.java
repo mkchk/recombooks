@@ -3,14 +3,22 @@ package com.recombooks;
 public class Book {
 
     private int bookID;
-    
+
     private String title;
-    
+
     private String author;
-    
+
     private String ASIN;
-    
+
     private String largeImageUrl;
+
+    //private String recommenderName;
+
+    //private String recommenderImageUrl;
+
+    //private String recommenderReview;
+    
+    private int recommendationID;
 
     public String getTitle() {
         return title;
@@ -70,5 +78,12 @@ public class Book {
         this.largeImageUrl = largeImageUrl;
     }
 
+    public int getRecommendationID() {
+        return recommendationID;
+    }
+
+    public void setRecommendationID(int recommendationID) {
+        this.recommendationID = recommendationID;
+    }
 
 }
